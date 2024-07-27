@@ -3,7 +3,7 @@
 ## Giới thiệu
 
 Memory Match Game là một trò chơi trí tuệ đơn giản nhưng gây nghiện, trong đó người chơi phải tìm các cặp hình ảnh giống nhau để chiến thắng. Trò chơi có một số quy tắc cơ bản và thách thức bao gồm giới hạn thời gian và số lần di chuyển. Trò chơi được thiết kế để chơi trên cả điện thoại và máy tính, với giao diện responsive và dễ sử dụng.
-
+Link: https://trananhduck.github.io/Memory-Match-Game/MemoryMatchGame
 ## Các tính năng
 
 - **Chơi theo cặp**: Nhấp vào hai thẻ để lật và tìm cặp hình giống nhau.
