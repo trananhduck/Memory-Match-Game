@@ -2,22 +2,22 @@
 
 ## Giới thiệu
 
-Memory Match Game là một trò chơi trí tuệ đơn giản nhưng gây nghiện, trong đó người chơi phải tìm các cặp hình ảnh giống nhau để chiến thắng. Trò chơi có một số quy tắc cơ bản và thách thức bao gồm giới hạn thời gian và số lần di chuyển. Trò chơi được thiết kế để chơi trên cả điện thoại và máy tính, với giao diện responsive và dễ sử dụng.
+Memory Match Game là một trò chơi trí tuệ đơn giản nhưng gây nghiện, trong đó người chơi phải tìm các cặp hình ảnh giống nhau để chiến thắng. Trò chơi có một số quy tắc cơ bản và thách thức bao gồm giới hạn thời gian và số lần chọn cặp. Trò chơi được thiết kế để chơi trên cả điện thoại và máy tính, với giao diện responsive và dễ sử dụng.
 Link: https://trananhduck.github.io/Memory-Match-Game/MemoryMatchGame
 ## Các tính năng
 
 - **Chơi theo cặp**: Nhấp vào hai thẻ để lật và tìm cặp hình giống nhau.
 - **Giới hạn thời gian**: Người chơi có 5 phút để hoàn thành trò chơi.
-- **Giới hạn số lần di chuyển**: Người chơi có tối đa 15 lần di chuyển.
-- **Thông tin trò chơi**: Hiển thị số lần di chuyển và thời gian còn lại.
+- **Giới hạn số lần chọn cặp**: Người chơi có tối đa 25 lần chọn cặp .
+- **Thông tin trò chơi**: Hiển thị số lần chọn cặp và thời gian còn lại.
 - **Nút điều khiển**: Nút "Start" để bắt đầu trò chơi, nút "Resume" để tiếp tục sau khi tạm dừng, và nút "Restart" để bắt đầu lại trò chơi.
 
 ## Cách chơi
 
 1. **Bắt đầu trò chơi**: Nhấn vào nút "Start" để bắt đầu trò chơi. Bàn chơi sẽ được hiển thị và bạn có thể bắt đầu lật các thẻ.
 2. **Lật thẻ**: Nhấp vào hai thẻ để lật và tìm cặp hình giống nhau. Mỗi lần lật hai thẻ sẽ được tính là một "move".
-3. **Chiến thắng**: Bạn sẽ chiến thắng nếu tìm đủ các cặp hình trong vòng 5 phút và không vượt quá 15 lần di chuyển.
-4. **Thua cuộc**: Nếu hết thời gian hoặc vượt quá số lần di chuyển, trò chơi sẽ kết thúc và bạn sẽ nhận thông báo thua cuộc.
+3. **Chiến thắng**: Bạn sẽ chiến thắng nếu tìm đủ các cặp hình trong vòng 5 phút và không vượt quá 15 lần chọn cặp.
+4. **Thua cuộc**: Nếu hết thời gian hoặc vượt quá số lần chọn cặp, trò chơi sẽ kết thúc và bạn sẽ nhận thông báo thua cuộc.
 
 ## Yêu cầu
 
