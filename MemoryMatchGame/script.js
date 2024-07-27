@@ -51,7 +51,7 @@ function createBoard() {
         board.appendChild(card);
     });
 
-    timerInterval = setInterval(updateTimer, 1000);
+    resetTimer();
 }
 
 function shuffle(array) {
@@ -97,12 +97,12 @@ function checkMatch() {
 
     if (matchedPairs === images.length / 2) {
         clearInterval(timerInterval);
-        if (moves <= 15) {
+        if (moves <= 20) {
             showModal(`Congratulations! You won in ${formatTime(timeLeft)} remaining!`);
         }
-    } else if (moves >= 15) {
+    } else if (moves >= 20) {
         clearInterval(timerInterval);
-        showModal('Game Over! You exceeded 15 moves.');
+        showModal('Game Over! You exceeded 20 moves.');
         disableBoard();
     }
 }
@@ -117,6 +117,13 @@ function updateTimer() {
 
     timeLeft--;
     timerElement.textContent = `Time: ${formatTime(timeLeft)}`;
+}
+
+function resetTimer() {
+    timeLeft = 300; // Reset thời gian
+    timerElement.textContent = `Time: ${formatTime(timeLeft)}`;
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(updateTimer, 1000);
 }
 
 function formatTime(seconds) {
@@ -136,12 +143,11 @@ function startGame() {
     cardIds = [];
     matchedPairs = 0;
     moves = 0;
-    timeLeft = 300; // Reset thời gian
 
     createBoard();
 
     moveCountElement.textContent = `Moves: ${moves}`;
-    timerElement.textContent = `Time: ${formatTime(timeLeft)}`;
+    resetTimer();
     startBtn.disabled = true;
     restartBtn.disabled = false;
 }
