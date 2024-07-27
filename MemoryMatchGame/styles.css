@@ -40,8 +40,8 @@ body {
 
 /* Thiết lập các ô thẻ trò chơi */
 .card {
-    background-color: #ddd;
-    border: 1px solid #aaa;
+    background-color: #4ecdea;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
