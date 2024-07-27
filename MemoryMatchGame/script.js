@@ -22,8 +22,8 @@ let cardValues = [];
 let cardIds = [];
 let cardsFlipped = 0;
 let matchedPairs = 0;
-let moves = 0; // Đếm số nước đi
-let timeLeft = 300; // 5 phút = 300 giây
+let moves = 0;
+let timeLeft = 300;
 let timerInterval;
 
 function createBoard() {
@@ -65,7 +65,7 @@ function flipCard() {
     cardIds.push(clickedCard.dataset.id);
 
     if (cardValues.length === 2) {
-        moves++; // Tăng số nước đi
+        moves++;
         moveCountElement.textContent = `Moves: ${moves}`;
         setTimeout(checkMatch, 500);
     }
@@ -89,13 +89,13 @@ function checkMatch() {
 
     if (matchedPairs === images.length / 2) {
         clearInterval(timerInterval);
-        if (moves <= 15) {
+        if (moves <= 25) {
             setTimeout(() => alert(`Congratulations! You won in ${formatTime(timeLeft)} remaining!`), 100);
         }
-    } else if (moves >= 15) {
+    } else if (moves >= 25) {
         clearInterval(timerInterval);
-        setTimeout(() => alert('Game Over! You exceeded 15 moves.'), 100);
-        disableBoard(); // Vô hiệu hóa bảng khi kết thúc trò chơi
+        setTimeout(() => alert('Game Over! You exceeded 25 moves.'), 100);
+        disableBoard();
     }
 }
 
