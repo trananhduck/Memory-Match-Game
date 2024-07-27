@@ -1,0 +1,108 @@
+/* Thiết lập cơ bản */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Phần thông tin trò chơi */
+.game-info {
+    margin-bottom: 20px;
+}
+
+/* Kiểu dáng cho thông tin trò chơi */
+.info {
+    font-size: 18px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Cảnh báo */
+.warning {
+    font-size: 18px;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+/* Bảng trò chơi với responsive layout */
+.game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Thiết lập các ô thẻ trò chơi */
+.card {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 100px; /* Kích thước mặc định */
+    height: 100px; /* Kích thước mặc định */
+}
+
+/* Hiển thị ảnh trong thẻ */
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+
+/* Hiển thị ảnh khi thẻ bị lật */
+.card.flipped img {
+    display: block;
+}
+
+/* Hiển thị thẻ đã ghép thành công */
+.card.matched {
+    background-color: #4caf50;
+    border-color: #388e3c;
+    cursor: default;
+}
+
+/* Nút bấm */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Nút bị vô hiệu hóa */
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Responsive layout cho điện thoại */
+@media (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(4, 1fr); /* 4 cột trên điện thoại */
+    }
+
+    .info, .warning {
+        font-size: 16px; /* Điều chỉnh kích thước văn bản cho màn hình nhỏ */
+    }
+
+    .card {
+        width: 80px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+        height: 80px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+    }
+}
+
+/* Responsive layout cho màn hình rộng hơn */
+@media (min-width: 769px) {
+    .game-board {
+        grid-template-columns: repeat(5, 100px); /* 5 cột cho màn hình lớn hơn */
+    }
+}
