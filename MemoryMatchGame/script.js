@@ -2,7 +2,6 @@ const board = document.getElementById('gameBoard');
 const moveCountElement = document.getElementById('moveCount');
 const timerElement = document.getElementById('timer');
 const startBtn = document.getElementById('startBtn');
-const resumeBtn = document.getElementById('resumeBtn');
 const restartBtn = document.getElementById('restartBtn');
 
 const images = [
@@ -136,14 +135,6 @@ function startGame() {
     moveCountElement.textContent = `Moves: ${moves}`;
     timerElement.textContent = `Time: ${formatTime(timeLeft)}`;
     startBtn.disabled = true;
-    resumeBtn.disabled = false;
-    restartBtn.disabled = false;
-}
-
-function resumeGame() {
-    timerInterval = setInterval(updateTimer, 1000);
-    startBtn.disabled = true;
-    resumeBtn.disabled = true;
     restartBtn.disabled = false;
 }
 
@@ -152,5 +143,4 @@ function restartGame() {
 }
 
 startBtn.addEventListener('click', startGame);
-resumeBtn.addEventListener('click', resumeGame);
-restartBtn.addEvent
+restartBtn.addEventListener('click', restartGame);
