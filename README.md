@@ -11,7 +11,7 @@ Link: https://trananhduck.github.io/Memory-Match-Game/MemoryMatchGame
 - **Giới hạn thời gian**: Người chơi có 5 phút để hoàn thành trò chơi.
 - **Giới hạn số lần chọn cặp**: Người chơi có tối đa 25 lần chọn cặp .
 - **Thông tin trò chơi**: Hiển thị số lần chọn cặp và thời gian còn lại.
-- **Nút điều khiển**: Nút "Start" để bắt đầu trò chơi, nút "Resume" để tiếp tục sau khi tạm dừng, và nút "Restart" để bắt đầu lại trò chơi.
+- **Nút điều khiển**: Nút "Start" để bắt đầu trò chơi, và nút "Restart" để bắt đầu lại trò chơi.
 
 ## Cách chơi
 
