@@ -9,7 +9,7 @@ Link: https://trananhduck.github.io/Memory-Match-Game/MemoryMatchGame
 
 - **Chơi theo cặp**: Nhấp vào hai thẻ để lật và tìm cặp hình giống nhau.
 - **Giới hạn thời gian**: Người chơi có 5 phút để hoàn thành trò chơi.
-- **Giới hạn số lần chọn cặp**: Người chơi có tối đa 25 lần chọn cặp .
+- **Giới hạn số lần chọn cặp**: Người chơi có tối đa 20 lần chọn cặp .
 - **Thông tin trò chơi**: Hiển thị số lần chọn cặp và thời gian còn lại.
 - **Nút điều khiển**: Nút "Start" để bắt đầu trò chơi, và nút "Restart" để bắt đầu lại trò chơi.
 
@@ -17,7 +17,7 @@ Link: https://trananhduck.github.io/Memory-Match-Game/MemoryMatchGame
 
 1. **Bắt đầu trò chơi**: Nhấn vào nút "Start" để bắt đầu trò chơi. Bàn chơi sẽ được hiển thị và bạn có thể bắt đầu lật các thẻ.
 2. **Lật thẻ**: Nhấp vào hai thẻ để lật và tìm cặp hình giống nhau. Mỗi lần lật hai thẻ sẽ được tính là một "move".
-3. **Chiến thắng**: Bạn sẽ chiến thắng nếu tìm đủ các cặp hình trong vòng 5 phút và không vượt quá 15 lần chọn cặp.
+3. **Chiến thắng**: Bạn sẽ chiến thắng nếu tìm đủ các cặp hình trong vòng 5 phút và không vượt quá 20 lần chọn cặp.
 4. **Thua cuộc**: Nếu hết thời gian hoặc vượt quá số lần chọn cặp, trò chơi sẽ kết thúc và bạn sẽ nhận thông báo thua cuộc.
 
 ## Yêu cầu
